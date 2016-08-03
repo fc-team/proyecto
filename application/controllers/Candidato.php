@@ -16,8 +16,6 @@ class Candidato extends CI_Controller{
     $this->load->view('role/candidato');
     $this->load->view('candidato/footer');  }
 
-
-
   function contact(){
      $this->load->view('candidato/nav');
       $this->load->view('site/contact');
@@ -42,4 +40,8 @@ class Candidato extends CI_Controller{
     $this->load->view('candidato/nav');
      $this->load->view('site/about');
     $this->load->view('candidato/footer');  }
+}
+
+function guardarCandidato(){
+
 }
