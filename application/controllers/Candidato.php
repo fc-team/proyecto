@@ -9,6 +9,8 @@ class Candidato extends CI_Controller{
     $this->load->model('Candidato_model');
     $this->load->model('Usuario_model');
 
+    
+
     //Codeigniter : Write Less Do More
   }
 

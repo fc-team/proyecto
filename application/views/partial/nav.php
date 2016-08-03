@@ -72,19 +72,7 @@
                   <a href="<?php echo base_url('Site/About')?>">NOSOTROS</a>
                 </li>
 
-                <li class="dropdown">
                 
-                  <a href="">REGISTRATE<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="<?php echo base_url('Site/login_candidato')?>">CANDIDATO</a>
-                    </li>
-                    <li>
-                      <a href="<?php echo base_url('Site/login_empresa');?>">EMPRESA</a>
-                    </li>
-
-                  </ul>
-                </li>
                 <li class="dropdown">
                   <a href="">VER CV<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
                   <ul class="dropdown-menu">
@@ -114,6 +102,30 @@
                     </li>
 
                   </ul>
+                </li>
+
+                <li class="dropdown">
+                
+                  <a href="">REGISTRATE<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="<?php echo base_url('Site/login_candidato')?>">CANDIDATO</a>
+                    </li>
+                    <li>
+                      <a href="<?php echo base_url('Site/login_empresa');?>">EMPRESA</a>
+                    </li>
+
+                  </ul>
+                </li>
+
+                <li >
+                
+                <a href="<?php echo base_url('Login')?>">Iniciar Seccion<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                  
+                   
+                    
+
+                  
                 </li>
 
                 
