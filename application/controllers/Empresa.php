@@ -7,6 +7,9 @@ class Empresa extends CI_Controller{
   {
     parent::__construct();
     //Codeigniter : Write Less Do More
+      $this->load->model('Empresa_model');
+      $this->load->model('Usuario_model');
+
   }
 
   function index()
@@ -22,8 +25,6 @@ class Empresa extends CI_Controller{
       $this->load->view('registro//empresa/oferta');
       $this->load->view('registro/empresa/footer');
     }
-
-
 
   function service(){
      $this->load->view('empresa/nav');
@@ -56,4 +57,32 @@ class Empresa extends CI_Controller{
     $this->load->view('empresa/footer');  }
 
 
-}
+    function guardarEmpresa(){
+
+      if ($_POST) {
+
+        $this->Empresa_model->guardar($_POST);
+        $this->load->view('site/datosGuardados');
+        # code...
+      }
+      else {
+        $this->load->view('site/datosNoGuardados');
+      # code...
+    }
+
+  }
+
+  public function guardarUsuario($datos)
+  {
+    if ($_POST) {
+
+      $this->Usuario_model->guardar($_POST);
+
+      # code...
+    }
+    $this->load->view('site/datosGuardados');
+  }
+
+        # code...
+
+    }

@@ -51,19 +51,15 @@ function guardarCandidato(){
 
     $this->Candidato_model->guardar($_POST);
 
-
-
-
     # code...
   }
-
-
-
-
 else {
-    $this->load->view('site/search');
+    $this->load->view('site/datosNoGuardados');
   # code...
 }
+
+$this->load->view('site/datosGuardados');
+
 }
 
 public function guardarUsuario($datos)
@@ -72,11 +68,9 @@ public function guardarUsuario($datos)
 
     $this->Usuario_model->guardar($_POST);
 
-
-
-
     # code...
   }
+  $this->load->view('site/datosGuardados');
 }
 
 

@@ -13,11 +13,8 @@ class Login extends CI_Controller {
 	{
 
 			$this->load->view('registro/nav');
-
-
-			
-		$this->load->view('registro/login');
-	$this->load->view('registro/footer');
+			$this->load->view('registro/login');
+			$this->load->view('registro/footer');
 
 	}
 
