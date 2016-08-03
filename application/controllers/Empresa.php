@@ -9,7 +9,6 @@ class Empresa extends CI_Controller{
     //Codeigniter : Write Less Do More
       $this->load->model('Empresa_model');
       $this->load->model('Usuario_model');
-
   }
 
   function index()
