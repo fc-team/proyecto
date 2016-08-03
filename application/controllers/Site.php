@@ -11,54 +11,50 @@ class Site extends CI_Controller{
 
   function index()
   {
-    $this->load->view('partial/nav');
-    $this->load->view('site/principal');
-    $this->load->view('partial/footer');  }
 
-  function service(){
-     $this->load->view('partial/nav');
-     $this->load->view('site/service');
-       $this->load->view('partial/footer');  }
+    $this->load->view('Partial/nav');
+    $this->load->view('site/Principal');
+    $this->load->view('Partial/footer');  }
 
   function contact(){
-     $this->load->view('partial/nav');
+     $this->load->view('Partial/nav');
       $this->load->view('site/contact');
-      $this->load->view('partial/footer');  }
+      $this->load->view('Partial/footer');  }
 
   function Privacy(){
-     $this->load->view('partial/nav');
+     $this->load->view('Partial/nav');
      $this->load->view('site/privacy');
-     $this->load->view('partial/footer');  }
+     $this->load->view('Partial/footer');  }
+
   function Principal(){
-       $this->load->view('partial/nav');
+       $this->load->view('Partial/nav');
        $this->load->view('site/principal');
-      $this->load->view('partial/footer');  }
+      $this->load->view('Partial/footer');  }
 
   function search(){
-     $this->load->view('partial/nav');
+     $this->load->view('Partial/nav');
       $this->load->view('site/search');
-      $this->load->view('partial/footer');  }
+      $this->load->view('Partial/footer');  }
 
   function About(){
-    $this->load->view('partial/nav');
+    $this->load->view('Partial/nav');
      $this->load->view('site/about');
-    $this->load->view('partial/footer');  }
+    $this->load->view('Partial/footer');  }
 
-    function login(){
-       
 
-      $this->load->view('registro/nav');
-       $this->load->view('registro/login');
-       $this->load->view('registro/footer');
 
-    }
+function login_empresa(){
+    $this->load->view('registro/empresa/nav');
+     $this->load->view('registro/empresa/login');
+    $this->load->view('registro/empresa/footer');  
 
-    function profesional(){
-       $this->load->view('partial/nav');
+  }
+function login_candidato(){
+    $this->load->view('registro/candidato/nav');
+     $this->load->view('registro/candidato/login');
+    $this->load->view('registro/candidato/footer');  
 
-       $this->load->view('role/candidato');
-         $this->load->view('registro/footer');
-    }
+  }
 
 
 

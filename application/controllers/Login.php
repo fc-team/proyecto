@@ -12,9 +12,12 @@ class Login extends CI_Controller {
 	public function index()
 	{
 
+			$this->load->view('registro/nav');
 
+
+			
 		$this->load->view('registro/login');
-
+	$this->load->view('registro/footer');
 
 	}
 
