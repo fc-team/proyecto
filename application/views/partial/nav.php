@@ -72,15 +72,15 @@
                   <a href="<?php echo base_url('Site/About')?>">NOSOTROS</a>
                 </li>
 
-                
+
                 <li class="dropdown">
                   <a href="">VER CV<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="#">TODOS LOS CURRICULUM</a>
+                      <a href="<?php echo base_url('Candidato/verCandidatos')?>">TODOS LOS CURRICULUM</a>
                     </li>
                     <li>
-                      <a href="#">CURRICULUM POR AREA</a>
+                      <a href="#">-</a>
                     </li>
                     <li>
                       <a href="#">AGREGAR MI CURRICULUM</a>
@@ -105,7 +105,7 @@
                 </li>
 
                 <li class="dropdown">
-                
+
                   <a href="">REGISTRATE<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
                   <ul class="dropdown-menu">
                     <li>
@@ -119,16 +119,16 @@
                 </li>
 
                 <li >
-                
-                <a href="<?php echo base_url('Login')?>">Iniciar Seccion<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
-                  
-                   
-                    
 
-                  
+                <a href="<?php echo base_url('Login')?>">Iniciar Seccion<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+
+
+
+
+
                 </li>
 
-                
+
               </ul>
             </div>
         </nav>

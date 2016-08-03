@@ -9,7 +9,7 @@ class Candidato extends CI_Controller{
     $this->load->model('Candidato_model');
     $this->load->model('Usuario_model');
 
-    
+
 
     //Codeigniter : Write Less Do More
   }
@@ -73,6 +73,18 @@ public function guardarUsuario($datos)
     # code...
   }
   $this->load->view('site/datosGuardados');
+}
+
+public function verCandidatos(){
+  $data = array();
+  $data['candidatos'] = $this->Candidato_model->listarCandidatos();
+
+
+
+  $this->load->view('candidato/nav');
+   $this->load->view('candidato/verCandidatos', $data);
+  $this->load->view('candidato/footer');
+
 }
 
 
