@@ -6,6 +6,9 @@ class Candidato extends CI_Controller{
   public function __construct()
   {
     parent::__construct();
+    $this->load->model('Candidato_model');
+    $this->load->model('Usuario_model');
+
     //Codeigniter : Write Less Do More
   }
 
@@ -40,8 +43,43 @@ class Candidato extends CI_Controller{
     $this->load->view('candidato/nav');
      $this->load->view('site/about');
     $this->load->view('candidato/footer');  }
-}
+
 
 function guardarCandidato(){
+
+  if ($_POST) {
+
+    $this->Candidato_model->guardar($_POST);
+
+
+
+
+    # code...
+  }
+
+
+
+
+else {
+    $this->load->view('site/search');
+  # code...
+}
+}
+
+public function guardarUsuario($datos)
+{
+  if ($_POST) {
+
+    $this->Usuario_model->guardar($_POST);
+
+
+
+
+    # code...
+  }
+}
+
+
+  # code...
 
 }
